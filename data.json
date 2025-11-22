@@ -1,436 +1,148 @@
 [
   {
-    "nome": "JavaScript",
-    "descricao": "O JS é a linguagem da web.",
-    "data_criacao": "1995",
-    "link_oficial": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "nome": "Muay Thai",
+    "descricao": "Muay thai é uma luta conhecida por usar socos, cotoveladas, joelhadas, chutes e clinch.",
+    "origem": "Tailândia, cerca de 2000 anos atrás",
+    "informacoes": "https://www.cnnbrasil.com.br/esportes/outros-esportes/muay-thai/",
     "tags": [
-      "linguagem de programação",
-      "front-end",
-      "web"
+      "arte marcial",
+      "tailândia",
+      "luta das 8 armas"
     ]
   },
   {
-    "nome": "Python",
-    "descricao": "O Python é a linguagem da ciência dados e IA.",
-    "data_criacao": "1991",
-    "link_oficial": "https://docs.python.org/pt-br/3/",
+    "nome": "Boxe",
+    "descricao": "Tem raízes milenares, mas foi estruturado como esporte na Inglaterra moderna.",
+    "origem": "Grécia Antiga 668 a.C",
+    "informacoes": "https://www.cob.org.br/time-brasil/esportes/1-boxe",
     "tags": [
-      "linguagem de programação",
-      "ciência de dados",
-      "IA",
-      "backend"
+      "luta antiga",
+      "socos",
+      "esporte olímpico",
+      "nobre arte"
     ]
   },
   {
-    "nome": "Java",
-    "descricao": "Java é uma linguagem de programação orientada a objetos, amplamente utilizada para aplicações corporativas e Android.",
-    "data_criacao": "1995",
-    "link_oficial": "https://docs.oracle.com/en/java/",
+    "nome": "Karatê",
+    "descricao": "Arte marcial japonesa de Okinawa que usa socos, chutes e defesas com as mãos abertas.",
+    "origem": "Século XX, Okinawa, Japão",
+    "informacoes": "https://www.olympics.com/pt/esportes/karate/",
     "tags": [
-      "linguagem de programação",
-      "backend",
-      "corporativo",
-      "Android"
+      "arte marcial",
+      "japão",
+      "okinawa",
+      "mãos vazias"
     ]
   },
   {
-    "nome": "C#",
-    "descricao": "C# é uma linguagem de programação moderna, orientada a objetos, desenvolvida pela Microsoft, muito usada com .NET.",
-    "data_criacao": "2000",
-    "link_oficial": "https://learn.microsoft.com/pt-br/dotnet/csharp/",
+    "nome": "Jiu-Jitsu Brasileiro",
+    "descricao": "Focado na luta de chão, o Jiu-Jitsu Brasileiro (BJJ) é uma arte marcial que utiliza alavancas, estrangulamentos e chaves de articulação.",
+    "origem": "Início do século XX, Brasil",
+    "informacoes": "https://www.todamateria.com.br/jiu-jitsu/",
     "tags": [
-      "linguagem de programação",
-      ".NET",
-      "Microsoft",
-      "backend"
+      "arte marcial",
+      "brasil",
+      "família gracie",
+      "luta de chão",
+      "bjj"
     ]
   },
   {
-    "nome": "Go",
-    "descricao": "Go, ou Golang, é uma linguagem de programação de código aberto criada pelo Google, focada em performance e concorrência.",
-    "data_criacao": "2009",
-    "link_oficial": "https://go.dev/doc/",
+    "nome": "Judô",
+    "descricao": "Criado por Jigoro Kano, o Judô é uma arte marcial e esporte olímpico que busca o 'caminho suave', usando o peso do oponente contra ele mesmo através de quedas e imobilizações.",
+    "origem": "1882, Japão",
+    "informacoes": "https://www.olympics.com/pt/esportes/judo/",
     "tags": [
-      "linguagem de programação",
-      "backend",
-      "concorrência",
-      "Google"
+      "arte marcial",
+      "japão",
+      "esporte olímpico",
+      "caminho suave"
     ]
   },
   {
-    "nome": "Rust",
-    "descricao": "Rust é uma linguagem de programação de sistemas focada em segurança, especialmente segurança de concorrência e memória.",
-    "data_criacao": "2010",
-    "link_oficial": "https://www.rust-lang.org/pt-BR/learn",
+    "nome": "Taekwondo",
+    "descricao": "Arte marcial coreana famosa por suas técnicas de chutes altos, rápidos e giratórios. É também um esporte olímpico.",
+    "origem": "Década de 1940, Coreia",
+    "informacoes": "https://www.olympics.com/pt/esportes/taekwondo/",
     "tags": [
-      "linguagem de programação",
-      "sistemas",
-      "segurança",
-      "performance"
+      "arte marcial",
+      "coreia",
+      "esporte olímpico",
+      "chutes"
     ]
   },
   {
-    "nome": "TypeScript",
-    "descricao": "TypeScript é um superconjunto de JavaScript que adiciona tipagem estática opcional à linguagem, desenvolvido pela Microsoft.",
-    "data_criacao": "2012",
-    "link_oficial": "https://www.typescriptlang.org/docs/",
+    "nome": "Krav Maga",
+    "descricao": "Um sistema de autodefesa e combate militar desenvolvido para as Forças de Defesa de Israel (IDF), focado em neutralizar ameaças rapidamente em situações do mundo real.",
+    "origem": "Década de 1940, Israel",
+    "informacoes": "https://kravmagabrasil.org.br/historia-do-krav-maga/",
     "tags": [
-      "linguagem de programação",
-      "frontend",
-      "superset",
-      "tipagem"
+      "autodefesa",
+      "israel",
+      "combate"
     ]
   },
   {
-    "nome": "Swift",
-    "descricao": "Swift é uma linguagem de programação poderosa e intuitiva para desenvolver apps para iOS, Mac, Apple TV e Apple Watch.",
-    "data_criacao": "2014",
-    "link_oficial": "https://developer.apple.com/swift/",
+    "nome": "Capoeira",
+    "descricao": "Arte marcial afro-brasileira que combina elementos de dança, acrobacias e música. É conhecida por seus movimentos fluidos e complexos.",
+    "origem": "Século XVI, Brasil",
+    "informacoes": "https://www.todamateria.com.br/capoeira/",
     "tags": [
-      "linguagem de programação",
-      "mobile",
-      "iOS",
-      "Apple"
+      "arte marcial",
+      "brasil",
+      "dança",
+      "música",
+      "afro-brasileira"
     ]
   },
   {
-    "nome": "Kotlin",
-    "descricao": "Kotlin é uma linguagem de programação moderna, de tipagem estática, que roda na JVM e é usada para desenvolvimento Android.",
-    "data_criacao": "2011",
-    "link_oficial": "https://kotlinlang.org/",
+    "nome": "Kung Fu",
+    "descricao": "Termo geral para as artes marciais chinesas. Existem centenas de estilos, como Shaolin, Wing Chun e Tai Chi, cada um com suas próprias técnicas e filosofias.",
+    "origem": "China Antiga",
+    "informacoes": "https://www.todamateria.com.br/kung-fu/",
     "tags": [
-      "linguagem de programação",
-      "mobile",
-      "Android",
-      "JVM"
+      "arte marcial",
+      "china",
+      "shaolin",
+      "wing chun",
+      "wushu"
     ]
   },
   {
-    "nome": "Ruby",
-    "descricao": "Ruby é uma linguagem de script dinâmica e orientada a objetos, conhecida por sua sintaxe elegante e facilidade de uso.",
-    "data_criacao": "1995",
-    "link_oficial": "https://www.ruby-lang.org/pt/",
+    "nome": "Aikido",
+    "descricao": "Arte marcial japonesa moderna desenvolvida por Morihei Ueshiba. Foca em harmonizar-se com o movimento do oponente para redirecionar sua força, em vez de opô-la diretamente.",
+    "origem": "Início do século XX, Japão",
+    "informacoes": "https://www.aikidouniao.com.br/historia-do-aikido/",
     "tags": [
-      "linguagem de programação",
-      "backend",
-      "scripting",
-      "web"
+      "arte marcial",
+      "japão",
+      "defesa pessoal",
+      "harmonia",
+      "morihei ueshiba"
     ]
   },
   {
-    "nome": "PHP",
-    "descricao": "PHP é uma linguagem de script do lado do servidor, amplamente utilizada para desenvolvimento web e sistemas dinâmicos.",
-    "data_criacao": "1995",
-    "link_oficial": "https://www.php.net/",
+    "nome": "Sambo",
+    "descricao": "Arte marcial e esporte de combate de origem soviética, cujo nome significa 'autodefesa sem armas'. Combina técnicas de judô, luta livre e estilos de lutas tradicionais da região.",
+    "origem": "Início da década de 1920, União Soviética",
+    "informacoes": "https://www.terra.com.br/esportes/sambo-origem-onde-e-praticada-e-as-regras-da-arte-marcial,4c8b5f8d041fb4f20fabf5096b810b201mtrbxn4.html",
     "tags": [
-      "linguagem de programação",
-      "backend",
-      "web",
-      "server-side"
+      "arte marcial",
+      "rússia",
+      "luta agarrada",
+      "autodefesa",
+      "soviética"
     ]
   },
   {
-    "nome": "React",
-    "descricao": "Uma biblioteca JavaScript para construir interfaces de usuário baseadas em componentes.",
-    "data_criacao": "2013",
-    "link": "https://reactjs.org/",
+    "nome": "Kickboxing",
+    "descricao": "Esporte de combate em pé que combina socos do boxe com chutes de artes marciais como o karatê. Foi desenvolvido no Japão e nos EUA.",
+    "origem": "Década de 1960, Japão e EUA",
+    "informacoes": "https://kyokushinkaikan.com.br/historia/",
     "tags": [
-      "biblioteca",
-      "frontend",
-      "UI",
-      "web development"
-    ]
-  },
-  {
-    "nome": "Vue.js",
-    "descricao": "Um framework progressivo para a construção de interfaces de usuário, conhecido por sua facilidade de integração.",
-    "data_criacao": "2014",
-    "link": "https://vuejs.org/",
-    "tags": [
-      "framework",
-      "frontend",
-      "SPA",
-      "MVVM"
-    ]
-  },
-  {
-    "nome": "Angular",
-    "descricao": "Um framework de desenvolvimento front-end mantido pelo Google, ideal para aplicações de larga escala (SPA).",
-    "data_criacao": "2016",
-    "link": "https://angular.io/",
-    "tags": [
-      "framework",
-      "frontend",
-      "Google",
-      "mobile"
-    ]
-  },
-  {
-    "nome": "Node.js",
-    "descricao": "Um ambiente de tempo de execução (runtime) que permite executar código fora do navegador, comumente usado para back-end.",
-    "data_criacao": "2009",
-    "link": "https://nodejs.org/",
-    "tags": [
-      "runtime",
-      "backend",
-      "server-side",
-      "assíncrono"
-    ]
-  },
-  {
-    "nome": "Express.js",
-    "descricao": "Um framework web minimalista e flexível para Node.js, usado para construir APIs e aplicações web.",
-    "data_criacao": "2010",
-    "link": "https://expressjs.com/",
-    "tags": [
-      "framework",
-      "backend",
-      "Node.js",
-      "API REST"
-    ]
-  },
-  {
-    "nome": "Next.js",
-    "descricao": "Framework de React com suporte a renderização do lado do servidor (SSR) e geração de sites estáticos (SSG).",
-    "data_criacao": "2016",
-    "link": "https://nextjs.org/",
-    "tags": [
-      "framework",
-      "frontend",
-      "fullstack",
-      "SSR",
-      "Vercel"
-    ]
-  },
-  {
-    "nome": "Svelte",
-    "descricao": "Um compilador que transforma código declarativo em código de DOM altamente eficiente em tempo de compilação.",
-    "data_criacao": "2016",
-    "link": "https://svelte.dev/",
-    "tags": [
-      "framework",
-      "compilador",
-      "frontend",
-      "reatividade"
-    ]
-  },
-  {
-    "nome": "PostgreSQL",
-    "descricao": "Um sistema de banco de dados objeto-relacional de código aberto, conhecido por sua robustez e conformidade com SQL.",
-    "data_criacao": "1996",
-    "link": "https://www.postgresql.org/",
-    "tags": [
-      "banco de dados",
-      "SQL",
-      "relacional",
-      "open source"
-    ]
-  },
-  {
-    "nome": "MongoDB",
-    "descricao": "Um banco de dados orientado a documentos (NoSQL) que usa documentos BSON com esquemas flexíveis.",
-    "data_criacao": "2009",
-    "link": "https://www.mongodb.com/",
-    "tags": [
-      "banco de dados",
-      "NoSQL",
-      "documento",
-      "escalabilidade"
-    ]
-  },
-  {
-    "nome": "Redis",
-    "descricao": "Um armazenamento de estrutura de dados em memória, usado como cache, banco de dados e intermediário de mensagens.",
-    "data_criacao": "2009",
-    "link": "https://redis.io/",
-    "tags": [
-      "banco de dados",
-      "NoSQL",
-      "in-memory",
-      "caching",
-      "mensageria"
-    ]
-  },
-  {
-    "nome": "Docker",
-    "descricao": "Uma plataforma para desenvolver, enviar e executar aplicações usando contêineres.",
-    "data_criacao": "2013",
-    "link": "https://www.docker.com/",
-    "tags": [
-      "containerização",
-      "DevOps",
-      "ferramenta",
-      "virtualização leve"
-    ]
-  },
-  {
-    "nome": "Kubernetes",
-    "descricao": "Um sistema de orquestração de contêineres de código aberto, originalmente projetado pelo Google.",
-    "data_criacao": "2014",
-    "link": "https://kubernetes.io/",
-    "tags": [
-      "orquestração",
-      "DevOps",
-      "cloud native",
-      "automação"
-    ]
-  },
-  {
-    "nome": "Terraform",
-    "descricao": "Uma ferramenta de Infraestrutura como Código (IaC) que permite provisionar e gerenciar recursos de nuvem.",
-    "data_criacao": "2014",
-    "link": "https://www.terraform.io/",
-    "tags": [
-      "DevOps",
-      "IaC",
-      "cloud computing",
-      "HashiCorp"
-    ]
-  },
-  {
-    "nome": "AWS Lambda",
-    "descricao": "Um serviço de computação serverless da Amazon Web Services (AWS) que executa código em resposta a eventos.",
-    "data_criacao": "2014",
-    "link": "https.aws.amazon.com/lambda/",
-    "tags": [
-      "serverless",
-      "FaaS",
-      "cloud computing",
-      "AWS"
-    ]
-  },
-  {
-    "nome": "GraphQL",
-    "descricao": "Uma linguagem de consulta (query language) para APIs e um runtime para cumprir essas consultas.",
-    "data_criacao": "2015",
-    "link": "https://graphql.org/",
-    "tags": [
-      "API",
-      "query language",
-      "backend",
-      "alternativa REST"
-    ]
-  },
-  {
-    "nome": "gRPC",
-    "descricao": "Um framework de Remote Procedure Call (RPC) de alto desempenho e código aberto, desenvolvido pelo Google.",
-    "data_criacao": "2015",
-    "link": "https://grpc.io/",
-    "tags": [
-      "protocolo",
-      "comunicação",
-      "microserviços",
-      "API"
-    ]
-  },
-  {
-    "nome": "Apache Kafka",
-    "descricao": "Uma plataforma de streaming de eventos distribuída capaz de lidar com trilhões de eventos por dia.",
-    "data_criacao": "2011",
-    "link": "https://kafka.apache.org/",
-    "tags": [
-      "mensageria",
-      "event streaming",
-      "big data",
-      "distribuído"
-    ]
-  },
-  {
-    "nome": "Elasticsearch",
-    "descricao": "Um motor de busca e análise distribuído e altamente escalável, baseado em Lucene.",
-    "data_criacao": "2010",
-    "link": "https://www.elastic.co/",
-    "tags": [
-      "banco de dados",
-      "busca",
-      "análise",
-      "NoSQL"
-    ]
-  },
-  {
-    "nome": "Jenkins",
-    "descricao": "Um servidor de automação de código aberto que suporta a construção, implantação e automação de qualquer projeto.",
-    "data_criacao": "2011",
-    "link": "https://www.jenkins.io/",
-    "tags": [
-      "CI/CD",
-      "DevOps",
-      "automação",
-      "servidor"
-    ]
-  },
-  {
-    "nome": "Git",
-    "descricao": "Sistema de controle de versão distribuído projetado para lidar com tudo, desde pequenos a grandes projetos com velocidade e eficiência.",
-    "data_criacao": "2005",
-    "link": "https://git-scm.com/",
-    "tags": [
-      "controle de versão",
-      "ferramenta",
-      "colaboração",
-      "desenvolvimento"
-    ]
-  },
-  {
-    "nome": "Prometheus",
-    "descricao": "Um sistema de monitoramento e alerta open-source projetado para ambientes dinâmicos de microserviços.",
-    "data_criacao": "2012",
-    "link": "https://prometheus.io/",
-    "tags": [
-      "monitoramento",
-      "alerta",
-      "DevOps",
-      "observabilidade"
-    ]
-  },
-  {
-    "nome": "Helm",
-    "descricao": "Um gerenciador de pacotes para Kubernetes que ajuda a definir, instalar e atualizar aplicações K8s.",
-    "data_criacao": "2015",
-    "link": "https://helm.sh/",
-    "tags": [
-      "Kubernetes",
-      "DevOps",
-      "gerenciamento",
-      "ferramenta"
-    ]
-  },
-  {
-    "nome": "WebAssembly (Wasm)",
-    "descricao": "Um formato de instrução binária de baixo nível projetado para ser um alvo de compilação para linguagens de alto nível.",
-    "data_criacao": "2017",
-    "link": "https://webassembly.org/",
-    "tags": [
-      "formato binário",
-      "web",
-      "performance",
-      "navegador"
-    ]
-  },
-  {
-    "nome": "Puppet",
-    "descricao": "Uma ferramenta de automação de infraestrutura baseada em modelo, usada para gerenciar configurações de sistemas.",
-    "data_criacao": "2005",
-    "link": "https://www.puppet.com/",
-    "tags": [
-      "gerenciamento de configuração",
-      "DevOps",
-      "automação",
-      "infraestrutura"
-    ]
-  },
-  {
-    "nome": "MariaDB",
-    "descricao": "Um fork de código aberto do MySQL, mantido pela comunidade e conhecido por seu desempenho e recursos de segurança.",
-    "data_criacao": "2009",
-    "link": "https://mariadb.org/",
-    "tags": [
-      "banco de dados",
-      "SQL",
-      "relacional",
-      "open source",
-      "fork MySQL"
+      "esporte de combate",
+      "chutes",
+      "socos"
     ]
   }
 ]
