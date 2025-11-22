@@ -1,240 +1,349 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-* {
-    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
-}
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-color: #2628a3; /* Cor primária (azul claro) */
-    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
-    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
-    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+  --cor-primaria: #CC0000; /* Vermelho */
+  --cor-secundaria: #000000; /* Preto */
+  --cor-texto: #FFFFFF; /* Branco */
+  --cor-fundo: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0; /* Remove a margem padrão do body */
-    background: var(--bg-color); /* Define a cor de fundo usando uma variável */
-    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
-    font-family: "Roboto Mono", monospace; /* Define a família da fonte */
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
 }
 
-header {
-    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
-    display: flex; /* Habilita o layout flexbox */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-around; /* Distribui os itens com espaço ao redor */
-    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
-    top: 0; /* Posição do topo quando sticky */
-    background: var(--bg-color); /* Cor de fundo do cabeçalho */
-    z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
-    border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
-    gap: 1rem; /* Espaçamento entre os elementos flex */
+/* --- Header e Navegação --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--cor-primaria);
 }
 
-header h1 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    margin: 0; /* Remove a margem padrão */
-    font-weight: 500; /* Peso da fonte (médio) */
-    white-space: nowrap; /* Impede a quebra de linha do texto */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--cor-texto);
+  text-transform: uppercase;
 }
 
-div input {
-    padding: 0.375rem 0.75rem; /* Espaçamento interno */
-    border-radius: 1rem; /* Arredonda as bordas */
-    border: 1px solid var(--tertiary-color); /* Define a borda */
-    background: var(--bg-color); /* Cor de fundo */
-    font-family: inherit; /* Herda a família da fonte do elemento pai */
-    font-size: 1.5rem; /* Tamanho da fonte */
-    transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
-    width: 30rem; /* Largura do input */
-    color: var(--secondary-color); /* Cor do texto digitado */
-    margin-right: .5rem; /* Margem à direita */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
-div input::placeholder {
-    font-size: 1.2rem; /* Tamanho da fonte do placeholder */
-    font-weight: 300; /* Peso da fonte do placeholder */
-    color: var(--tertiary-color); /* Cor do texto do placeholder */
+.nav-links a {
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s;
 }
 
-div input:focus {
-    outline: none; /* Remove a borda de foco padrão */
-    border-color: var(--bg-color); /* Muda a cor da borda ao focar */
-    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--cor-primaria);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
 }
 
-#botao-busca {
-    padding: 1rem 2rem; /* Espaçamento interno */
-    border-radius: 1rem; /* Arredonda as bordas */
-    border: none; /* Remove a borda padrão */
-    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
-    font-family: inherit; /* Herda a família da fonte */
-    font-weight: 500; /* Peso da fonte */
-    font-size: 1rem; /* Tamanho da fonte */
-    white-space: nowrap; /* Impede a quebra de linha do texto */
-    transition: background-color 0.2s ease, color 0.2s ease; /* Transição suave para cor de fundo e cor do texto */
-    background-color: var(--bg-color); /* Cor de fundo */
-    color: var(--secondary-color); /* Cor do texto */
-    border: 1px solid var(--bg-color); /* Adiciona uma borda */
+.nav-links a:hover {
+  color: var(--cor-primaria);
 }
 
-#botao-busca:hover {
-    background-color: var(--primary-color); /* Muda a cor de fundo ao passar o mouse */
-    color: var(--bg-color); /* Muda a cor do texto ao passar o mouse */
-    box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa */
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-#botao-busca:active {
-    transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
+.menu-hamburguer {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
-main {
-    overflow-y: scroll; /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
-    max-width: 80rem; /* Largura máxima do conteúdo principal */
-    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
-    margin-top: 2rem; /* Margem no topo */
-    height: calc(100vh - 10rem - 4rem); /* Calcula a altura para preencher o espaço restante da tela */
+/* --- Banner --- */
+.banner {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1584464481056-9c1e3625a5e7?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-article {
-    background: none; /* Sem cor de fundo */
-    border-radius: 0; /* Sem bordas arredondadas */
-    padding: 0; /* Remove o padding */
-    padding: 0 1rem; /* Espaçamento interno nos lados */
-    margin-bottom: 1.25rem; /* Margem inferior */
-    box-shadow: none; /* Sem sombra */
-    transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transição suave */
-    border-bottom: 1px solid var(--bg-color); /* Borda inferior */
-    padding-bottom: 1.5rem; /* Espaçamento interno inferior */
+.banner-text h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--cor-texto);
+  text-shadow: 3px 3px 5px var(--cor-secundaria);
 }
 
-article:hover {
-    transform: scale(1.01); /* Aumenta ligeiramente o tamanho ao passar o mouse */
-    cursor: pointer; /* Muda o cursor para uma mão */
+/* --- Seções --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
-article h2 {
-    margin-top: 0; /* Remove a margem superior */
-    font-weight: 600; /* Peso da fonte */
-    font-size: 1.6rem; /* Tamanho da fonte */
-    border-bottom: none; /* Sem borda inferior */
-    padding-bottom: 0; /* Sem espaçamento interno inferior */
-    margin-bottom: 0.25rem; /* Margem inferior */
-    color: var(--primary-color); /* Cor do texto */
+.beneficios-section, .estilos-section {
+  padding: 6rem 2rem;
+  text-align: center;
 }
 
-article p {
-    margin: 0.5rem 0; /* Margem superior e inferior */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
-    font-size: 1rem; /* Tamanho da fonte */
-    margin-bottom: 0.5rem; /* Margem inferior */
-    color: var(--secondary-color); /* Cor do texto */
+.estilos-section {
+  background-color: var(--cor-secundaria);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -15vh;
+  padding-top: 20vh;
 }
 
-article p strong {
-    color: var(--tertiary-color); /* Cor do texto em negrito */
-    font-weight: 400; /* Peso da fonte */
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  color: var(--cor-primaria);
 }
 
-article a {
-    color: var(--primary-color); /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado padrão */
-    font-weight: 200; /* Peso da fonte */
+/* --- Benefícios --- */
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-article a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+.beneficio {
+  background-color: var(--cor-secundaria);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 5px solid var(--cor-primaria);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.beneficio:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.beneficio i {
+  font-size: 3rem;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+.beneficio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Estilos (Cards) --- */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+
+}
+
+.card {
+  background-color: var(--cor-fundo);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  transition: transform 0.3s, border-color 0.3s;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Sobreposição escura */
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.card > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Imagens de Fundo dos Cards --- */
+.card-muay-thai { background-image: url('https://portal.comunique-se.com.br/wp-content/uploads/2024/10/9b4b333e-1dd6-45de-9488-565a4b5dbbc1.jpeg'); }
+.card-boxe { background-image: url('https://www.shutterstock.com/image-photo/determined-african-man-muscular-athlete-600nw-2483552883.jpg'); }
+.card-karate { background-image: url('https://t3.ftcdn.net/jpg/01/27/09/22/360_F_127092211_76cbMikJKTB6Ms2rDjLGgnsLEOvCLhHI.jpg'); }
+.card-jiu-jitsu-brasileiro { background-image: url('https://bjjfanatics.com.br/cdn/shop/articles/helio0_1024x1024.jpg?v=1535803767'); }
+.card-judo { background-image: url('https://t3.ftcdn.net/jpg/01/35/70/58/360_F_135705819_WEDspOnGuN1vr4GkoSoLGR3PhhEnamGx.jpg'); }
+.card-taekwondo { background-image: url('https://media.istockphoto.com/id/1081040008/pt/foto/two-girls-in-taekwondo-combat.jpg?s=612x612&w=0&k=20&c=y2Cfl1GMVFN-TQn8bNAUkGeFlY46SjI0sbXP9P9bs9U='); }
+.card-krav-maga { background-image: url('https://static.ndmais.com.br/2022/06/krav-maga2.jpg'); }
+.card-capoeira { background-image: url('https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2022/03/29/624330b5282fb.jpeg'); }
+.card-kung-fu { background-image: url('https://media.istockphoto.com/id/1291154254/pt/foto/sensei-and-two-martial-arts-students-training-together.jpg?s=612x612&w=0&k=20&c=taHM4qT5xtdOEFROm_V_ygbgKstQwKXhRN9sYvP4Cdo='); }
+.card-aikido { background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Aikido_Uh%21.jpg'); }
+.card-sambo { background-image: url('https://images.squarespace-cdn.com/content/v1/5da9c4a17e42095872ed24d5/1614899123904-3T99R145K4LG54BPEXUR/im16.jpg'); }
+.card-kickboxing { background-image: url('https://www.shutterstock.com/image-photo/kickboxing-rivals-unleash-powerful-leg-260nw-2484805491.jpg'); }
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: var(--cor-primaria);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: var(--cor-primaria);
+  margin-bottom: 0.5rem;
+}
+
+.card .origem {
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.card .descricao {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.card a {
+  display: inline-block;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.card a:hover {
+  background-color: #a00;
+}
+
+/* --- Footer --- */
 .footer {
-    position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
-    bottom: 0; /* Alinha na parte inferior */
-    left: 0; /* Alinha à esquerda */
-    width: 100%; /* Largura total */
-    color: var(--tertiary-color); /* Cor do texto */
-    background-color: var(--bg-color); /* Cor de fundo */
-    padding: 15px 20px; /* Espaçamento interno */
-    border-top: 1px solid #3c4043; /* Borda superior */
-    font-size: 0.8rem; /* Tamanho da fonte */
-}
-
-.footer-location {
-    color: #9aa0a6; /* Cor do texto */
-    margin-bottom: 10px; /* Margem inferior */
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
 }
 
 .footer-links {
-    list-style: none; /* Remove os marcadores da lista */
-    display: flex; /* Habilita o layout flexbox */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 15px; /* Espaçamento entre os links */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer-links a {
-    color: var(--secondary-color); /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: color 0.2s; /* Transição suave para a cor */
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: var(--accent-color); /* Muda a cor do link ao passar o mouse (variável não definida) */
+  color: var(--cor-primaria);
 }
 
+.footer p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* --- Seção Jornada --- */
+.jornada-section {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1584734679134-54340f35b9d2?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.jornada-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.jornada-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 15px;
+  line-height: 1.6;
+}
+
+
+/* --- Responsividade --- */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
-        padding: 1rem; /* Reduz o espaçamento interno */
-    }
+  .nav-links {
+    display: none; /* Esconde no mobile */
+  }
 
-    header h1 {
-        text-align: center; /* Centraliza o texto */
-        margin-bottom: 1rem; /* Adiciona margem inferior */
-    }
+  .menu-hamburguer {
+    display: block; /* Mostra no mobile */
+  }
 
-    div input {
-        width: 90vw; /* Largura baseada na largura da viewport */
-        font-size: 1.2rem; /* Reduz o tamanho da fonte */
-    }
+  .banner h1 {
+    font-size: 3.5rem;
+  }
 
-    main {
-        padding: 0 1rem; /* Adiciona espaçamento lateral */
-    }
+  .banner {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
 
-    article:hover {
-        transform: none; /* Remove o efeito de escala ao passar o mouse */
-    }
-}
+  .estilos-section {
+    margin-top: -10vh;
+    padding-top: 15vh;
+  }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
-        max-width: 70%; /* Define uma largura máxima */
-        word-wrap: break-word; /* Permite a quebra de palavras longas */
-    }
-
-    div input,
-    div input::placeholder {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
-    }
-
-    article h2 {
-        font-size: 1.3rem; /* Reduz o tamanho da fonte */
-    }
-
-    div {
-        display: flex; /* Habilita flexbox */
-        align-items: center; /* Alinha itens ao centro */
-        justify-content: center; /* Centraliza itens */
-        flex-direction: column; /* Organiza em coluna */
-        gap: 0.5rem; /* Espaçamento entre os itens */
-    }
-
-    .footer {
-        display: none; /* Oculta o rodapé */
-    }
-
-    button {
-        margin-top: 1rem; /* Adiciona margem no topo */
-    }
+  h2 {
+    font-size: 2.5rem;
+  }
 }
